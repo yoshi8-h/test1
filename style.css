@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* -------- 定義 -------- */
+/* -------- CSS (スマホ時から作成) -------- */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 100vh 40px 50vh;
+}
+
+.title {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.cards {
+  width: 100%;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px auto 0;
+}
+
+.card {
+  width: 48%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  font-size: 32px;
+  color: #3CB371;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #3CB371;
+  color: white;
+  margin: 20px auto 0;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.media {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  margin: 80px auto 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media__img {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.media__text {
+  width: 50%;
+  padding: 10px;
+  line-height: 2;
+}
+
+.items {
+  max-width: 1024px;
+  width: 100%;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.item {
+  width: 100%;
+  color: white;
+  border-radius: 50%;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: #fff;
+  color: #3CB371;
+}
+
+.item__icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: #3CB371;
+}
+
+/*アニメーションの下準備*/
+.js-slideIn {
+  overflow: hidden;
+}
+
+.js-slideIn .js-slideIn-element {
+  display: inline-block;
+}
